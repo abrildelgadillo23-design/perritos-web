@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Los Perritos</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #fdf6ee;
+      color: #4d392f;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f4c095;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #db8a55;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #c97a45;
+    }
+
+    .contenido {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .seccion {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .seccion h2 {
+      color: #db8a55;
+      margin-top: 0;
+    }
+
+    .seccion p,
+    .seccion ul {
+      line-height: 1.6;
+    }
+
+    .seccion img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      margin-top: 15px;
+      display: block;
+    }
+
+    .razas-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .raza {
+      flex: 1 1 calc(33% - 20px);
+      background: #fff8f0;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .raza img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .boton {
+      display: block;
+      background-color: #db8a55;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.2em;
+      margin: 30px auto;
+      width: fit-content;
+      transition: background 0.3s;
+    }
+
+    .boton:hover {
+      background-color: #c97a45;
+    }
+
+    /* Estilos para formulario */
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-family: inherit;
+    }
+
+    form input[type="submit"] {
+      background-color: #db8a55;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #c97a45;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      .raza {
+        flex: 1 1 100%;
+      }
+
+      .seccion img {
+        max-width: 100%;
+      }
+
+      nav a {
+        padding: 10px;
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐶 LOS PERRITOS 🐶</h1>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="#que-son">¿Qué son?</a>
+    <a href="#que-hacen">¿Qué hacen?</a>
+    <a href="#que-comen">¿Qué comen?</a>
+    <a href="#comportamiento">Comportamiento</a>
+    <a href="#cuidados">Cuidados</a>
+    <a href="#razas">Razas</a>
+  </nav>
+
+  <div class="contenido">
+
+    <div id="que-son" class="seccion">
+      <h2>¿Qué son?</h2>
+      <p>Los perros son mamíferos domesticados que descienden del lobo. Son una de las primeras especies domesticadas por los humanos.</p>
+      <img src="imagenes/ge.jpeg" alt="Perro">
+    </div>
+
+    <div id="que-hacen" class="seccion">
+      <h2>¿Qué hacen los perros?</h2>
+      <p>Son animales leales y sociales. Pueden ser mascotas, perros guía, policías, pastores o simplemente amigos fieles.</p>
+      <img src="imagenes/ju.jpeg" alt="Perros trabajando">
+    </div>
+
+    <div id="que-comen" class="seccion">
+      <h2>¿Qué comen?</h2>
+      <p>Son omnívoros: comen croquetas, carne, arroz, vegetales y comida especial. Nunca deben comer chocolate, uvas ni cebolla.</p>
+      <img src="imagenes/co.jpg" alt="Comida para perros">
+    </div>
+
+    <div id="comportamiento" class="seccion">
+      <h2>Comportamientos</h2>
+      <p>Los perros son juguetones, protectores y pueden ser entrenados para obedecer órdenes.</p>
+      <img src="imagenes/entre.webp" alt="Perro entrenando">
+    </div>
+
+    <div id="cuidados" class="seccion">
+      <h2>Cuidados básicos</h2>
+      <ul>
+        <li>Agua y comida diaria</li>
+        <li>Vacunas y desparasitaciones</li>
+        <li>Paseos, ejercicio y cariño</li>
+        <li>Limpieza, baño y cepillado</li>
+      </ul>
+      <img src="imagenes/feli.jpg" alt="Perro bañándose">
+    </div>
+
+    <div id="razas" class="seccion">
+      <h2>Razas populares</h2>
+      <div class="razas-grid">
+        <div class="raza">
+          <img src="imagenes/labrador.jpg" alt="Labrador Retriever">
+          <p><strong>Labrador Retriever</strong><br>Amigable, activo y sociable.</p>
+        </div>
+        <div class="raza">
+          <img src="imagenes/chiiii.jpg" alt="Chihuahua">
+          <p><strong>Chihuahua</strong><br>Pequeño, valiente y muy fiel.</p>
+        </div>
+        <div class="raza">
+          <img src="imagenes/passs.jpg" alt="Pastor Alemán">
+          <p><strong>Pastor Alemán</strong><br>Inteligente y protector.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCIÓN DE COMENTARIOS FUNCIONAL CON FORMULARIO COMPLETO -->
+    <div class="seccion">
+      <h2>Deja tu comentario</h2>
+      <form action="https://formsubmit.co/abrildelgadillo23@cbtis179.edu.mx" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+
+        <label for="apellido_paterno">Apellido paterno:</label><br />
+        <input type="text" id="apellido_paterno" name="apellido_paterno" placeholder="Escribe tu apellido paterno" required><br><br>
+
+        <label for="apellido_materno">Apellido materno:</label><br />
+        <input type="text" id="apellido_materno" name="apellido_materno" placeholder="Escribe tu apellido materno" required><br><br>
+
+        <label for="correo">Correo electrónico:</label><br />
+        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required><br><br>
+
+        <label for="comentario">Comentario:</label><br />
+        <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Escribe tu comentario aquí" required></textarea><br><br>
+
+        <input type="submit" value="Enviar comentario">
+      </form>
+    </div>
+
+    <!-- BOTÓN FINAL -->
+    <a class="boton" href="https://www.google.com/search?q=perritos" target="_blank">🔍 Ver más perritos</a>
+
+  </div>
+
+</body>
+</html>
